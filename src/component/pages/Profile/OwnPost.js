@@ -10,7 +10,7 @@ const OwnPost = () => {
    const user = useSelector(state => state.user);
    const dispatch = useDispatch();
    useEffect(() => {
-      fetch(`http://localhost:2000/userposts/${user.email}`)
+      fetch(`https://social-server-01.herokuapp.com/userposts/${user.email}`)
          .then(res => res.json())
          .then(data => dispatch(setUserPost(data)))
    }, [userPost])
