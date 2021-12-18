@@ -1,0 +1,24 @@
+.barContainer{
+   margin-top: 60px;
+   height: 100vh;
+   display: block;
+   width: 60px;
+   box-shadow: 3px 4px 4px rgb(61, 57, 57);
+   position: fixed;
+}
+
+.barContainer li{
+   list-style: none;
+}
+.sideBar-logo{
+   display: flex;
+   flex-direction: column;
+   margin-bottom: 20px;
+   height: 30px;
+   width: 30px;
+   transition: .3s;
+}
+.sideBar-logo:hover{
+   transform: scale(1.2);
+   color: brown;
+}

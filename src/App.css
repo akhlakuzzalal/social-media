@@ -1,38 +1,64 @@
 .App {
-  text-align: center;
+  margin-left: 75px;
+  padding-top: 75px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header-style{
+  position: fixed;
+  width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.line-height-0{
+  line-height: 100%;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.shadaw{
+  background-color: #ffffff;
+  box-shadow: 1px 1px 1px 1px gray;
+}
+.post-option{
+  transition: .3s;
+}
+.post-option:hover{
+  cursor: pointer;
+  color: rgb(37, 37, 136);
+  font-weight: bold;
+}
+textarea,input{
+  border: none;
+  outline: none;
+}
+.login{
   display: flex;
-  flex-direction: column;
+  height: 100vh;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.profile{
+  padding-top: 60px;
+  width: 80vw;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cover-photo{
+  height: 300px;
+  width: 100%;
+}
+.profilePicture{
+  width: 250px;
+  height: 250px;
+  border: 5px solid gray;
+  border-radius: 50%;
+  margin-top: -100px;
+}
+.edit:hover{
+  cursor: pointer;
+  color: rgb(92, 160, 92);
+}
+.form-item{
+  width: 100%;
+  border: 2px solid rgba(0, 139, 139, 0.856);
+  border-radius: 15px;
+  margin: 6px;
+  padding: 10px;
+}
+.form-item textarea{
+  width: 100%;
 }
