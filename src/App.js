@@ -21,7 +21,7 @@ function App() {
             <Route exact path='/' element={<PrivateRoute><News /></PrivateRoute>}></Route>
             <Route exact path='/profile' element={<PrivateRoute><Profile /></PrivateRoute>}></Route>
             <Route exact path='/calender' element={<Calender></Calender>}></Route>
-            {/* <Route exact path='/weather' element={<Weather></Weather>}></Route> */}
+            <Route exact path='/weather' element={<Weather></Weather>}></Route>
             <Route exact path='/login' element={<LogIn></LogIn>}></Route>
             <Route path='*' element={<NotFound></NotFound>}></Route>
           </Routes></>
