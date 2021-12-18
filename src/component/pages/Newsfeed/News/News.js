@@ -10,12 +10,12 @@ const News = () => {
    const posts = useSelector(state => state.NewsFeed)
    const user = useSelector(state => state.user)
    useEffect(() => {
-      fetch(`http://localhost:2000/user/${user.email}`)
+      fetch(`https://social-server-01.herokuapp.com/user/${user.email}`)
          .then(res => res.json())
          .then(data => dispatch(setUser(data)))
    }, [user.email])
    useEffect(() => {
-      fetch('http://localhost:2000/posts')
+      fetch('https://social-server-01.herokuapp.com/posts')
          .then(res => res.json())
          .then(data => dispatch(setPost(data)))
    }, [])

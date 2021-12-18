@@ -9,7 +9,7 @@ const NewPost = () => {
    const { register, handleSubmit, reset } = useForm();
    const submit = (data) => {
       const postData = { postText: data.postText, postUser: user, email: user.email }
-      fetch('http://localhost:2000/newpost', {
+      fetch('https://social-server-01.herokuapp.com/newpost', {
          method: "POST",
          headers: {
             "content-type": "application/json"

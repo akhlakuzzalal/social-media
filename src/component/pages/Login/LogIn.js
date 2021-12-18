@@ -17,7 +17,7 @@ const LogIn = () => {
          .then((result) => {
             dispatch(setUser((result.user)))
             const userData = { email: result.user.email, name: result.user.displayName, photoURL: result.user.photoURL }
-            fetch('http://localhost:2000/user', {
+            fetch('https://social-server-01.herokuapp.com/user', {
                method: 'PUT',
                headers: {
                   "content-type": "application/json"

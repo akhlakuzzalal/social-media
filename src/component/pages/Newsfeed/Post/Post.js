@@ -14,7 +14,7 @@ const Post = ({ post }) => {
    const { photoURL, name } = postUser;
    const deletePost = (id) => {
       if (user.email === post.email) {
-         fetch(`http://localhost:2000/posts/${id}`, {
+         fetch(`https://social-server-01.herokuapp.com/posts/${id}`, {
             method: "DELETE"
          })
             .then(res => res.json())
@@ -27,7 +27,7 @@ const Post = ({ post }) => {
       setDeletePost(false)
    }
    useEffect(() => {
-      fetch('http://localhost:2000/posts')
+      fetch('https://social-server-01.herokuapp.com/posts')
          .then(res => res.json())
          .then(data => dispatch(setPost(data)))
 

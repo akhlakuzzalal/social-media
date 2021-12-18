@@ -19,7 +19,7 @@ const Profile = () => {
    const { register, handleSubmit } = useForm();
    const Submit = data => {
       const updateData = { email: user.email, about: data.aboutMe, birthday: startDate, occupation: data.occupassion };
-      fetch('http://localhost:2000/user', {
+      fetch('https://social-server-01.herokuapp.com/user', {
          method: 'PUT',
          headers: {
             "content-type": "application/json"
@@ -35,7 +35,7 @@ const Profile = () => {
       setModalShow(false)
    };
    useEffect(() => {
-      fetch(`http://localhost:2000/user/${user.email}`)
+      fetch(`https://social-server-01.herokuapp.com/user/${user.email}`)
          .then(res => res.json())
          .then(data => dispatch(setUser(data)))
       setUpdate(false)
