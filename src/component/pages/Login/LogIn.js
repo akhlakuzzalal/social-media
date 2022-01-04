@@ -7,8 +7,8 @@ import useFirebase from '../../../Firebase/useFirebase'
 const LogIn = () => {
    const navigate = useNavigate();
    const dispatch = useDispatch();
-   const loading = useSelector(state => state.loading)
-   const user = useSelector(state => state.user)
+   const loading = useSelector(state => state.loading);
+   const user = useSelector(state => state.user);
    const location = useLocation();
    const { googleSignIn } = useFirebase();
    const redirect_url = location.state?.from?.pathname;
